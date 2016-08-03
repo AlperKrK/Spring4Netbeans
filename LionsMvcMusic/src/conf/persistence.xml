@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="LionsMvcMusicPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.lions.controller.model.Artist</class>
+    <class>com.lions.controller.model.Userzs</class>
+    <class>com.lions.controller.model.Genre</class>
+    <class>com.lions.controller.model.Orderdetail</class>
+    <class>com.lions.controller.model.Orders</class>
+    <class>com.lions.controller.model.Album</class>
+    <class>com.lions.controller.model.Userzsrole</class>
+    <class>com.lions.controller.model.Cart</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="HAKI"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="SECRET34"/>
+    </properties>
+  </persistence-unit>
+</persistence>
